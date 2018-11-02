@@ -15,6 +15,8 @@ class CreateCarsTable extends Migration
             $table->string('Make');
             $table->string('Model');
             $table->integer('year');
+            $table->dateTime('updated_at');
+            $table->dateTime('created_at');
         });
     }
     /**
